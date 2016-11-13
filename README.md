@@ -31,6 +31,10 @@ If you'd like to make modifications specific to your use case, you should uninst
 this module after installing the `.ebextensions` file. Uninstallation won't take
 the file with it.
 
+## Acknowledgements
+
+Some of the hooks are based on logic from https://github.com/kopurando/better-faster-elastic-beanstalk.
+
 ## Release History
 
 * 1.1.0 Cache Node modules between deploys
