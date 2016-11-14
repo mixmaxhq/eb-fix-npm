@@ -16,7 +16,7 @@ and using Node 6.9.1.
 
 ## Installation
 
-1. `npm install eb-fix-npm --save`
+1. `npm install eb-fix-npm --save-dev` (see [here](https://github.com/mixmaxhq/install-files/blob/master/README.md#installation) for why --save-dev)
 2. Commit the `.ebextensions` file it creates.
 3. Deploy.
 
