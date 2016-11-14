@@ -6,8 +6,10 @@ ways in AWS Elastic Beanstalk.
 The config file will do this by installing deployment hooks that perform setup
 and cleanup related to Elastic Beanstalk's use of npm:
 
-* Downgrade npm to npm 2 because npm 3 is too slow for EB (deploys will time out)
+* Downgrade npm to npm 2 because npm 3 is too slow to install packages for EB (deploys will time out)
 * Cache Node modules between deploys
+* Only install (don't rebuild) Node modules on application deploy
+* Only rebuild (don't install) Node modules on configuration deploy
 * Remove npm temp files [leftover](https://github.com/npm/npm/issues/6855) by installing from shrinkwrap
 
 The hooks expect that you're running the
@@ -37,5 +39,6 @@ Some of the hooks are based on logic from https://github.com/kopurando/better-fa
 
 ## Release History
 
+* 1.2.0 Avoid unnecessarily installing/rebuilding Node modules
 * 1.1.0 Cache Node modules between deploys
 * 1.0.0 Initial commit
