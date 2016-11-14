@@ -1,7 +1,7 @@
 # eb-fix-npm
 
 This module installs an `.ebextensions` config file that will fix npm in various
-ways in AWS Elastic Beanstalk.
+ways in AWS Elastic Beanstalk to make your deploys faster and more reliable.
 
 The config file will do this by installing deployment hooks that perform setup
 and cleanup related to Elastic Beanstalk's use of npm:
