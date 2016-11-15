@@ -9,7 +9,10 @@ and cleanup related to Elastic Beanstalk's use of npm:
 * Downgrade npm to npm 2 because npm 3 is too slow to install packages for EB (deploys will time out)
 * Cache Node modules between deploys
 * Only install (don't rebuild) Node modules on application deploy
-* Only rebuild (don't install) Node modules on configuration deploy
+* Only rebuild (don't install) Node modules on configuration deploy (EB's script
+tries to both install and rebuild)
+* Actually rebuild Node modules on configuration deploy (EB's script uses the
+the wrong directory and so just aborts)
 * Remove npm temp files [leftover](https://github.com/npm/npm/issues/6855) by installing from shrinkwrap
 
 The hooks expect that you're running the
@@ -39,6 +42,7 @@ Some of the hooks are based on logic from https://github.com/kopurando/better-fa
 
 ## Release History
 
+* 1.2.3 Fix rebuild directory
 * 1.2.2 Misc fixes
 * 1.2.1 Use user's environment variables with npm
 * 1.2.0 Avoid unnecessarily installing/rebuilding Node modules
