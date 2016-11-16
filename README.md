@@ -42,6 +42,7 @@ Some of the hooks are based on logic from https://github.com/kopurando/better-fa
 
 ## Release History
 
+* 1.2.4 Set proper home directory
 * 1.2.3 Fix rebuild directory
 * 1.2.2 Misc fixes
 * 1.2.1 Use user's environment variables with npm
