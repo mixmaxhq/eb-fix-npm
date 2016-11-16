@@ -16,8 +16,7 @@ the wrong directory and so just aborts)
 * Remove npm temp files [leftover](https://github.com/npm/npm/issues/6855) by installing from shrinkwrap
 
 The hooks expect that you're running the
-[latest Node.js configuration](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html#concepts.platforms.nodejs)
-and using Node 6.9.1.
+[latest Node.js configuration](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html#concepts.platforms.nodejs).
 
 ## Installation
 
@@ -42,6 +41,7 @@ Some of the hooks are based on logic from https://github.com/kopurando/better-fa
 
 ## Release History
 
+* 1.2.5 Use the runtime Node version
 * 1.2.4 Set proper home directory
 * 1.2.3 Fix rebuild directory
 * 1.2.2 Misc fixes
