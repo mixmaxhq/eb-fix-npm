@@ -3,6 +3,9 @@
 This module installs an `.ebextensions` config file that will fix npm in various
 ways in AWS Elastic Beanstalk to make your deploys faster and more reliable.
 
+**TL;DR** This module makes it possible to upgrade from Node 4 to Node 6 on Elastic
+Beanstalk and speeds up npm install time by 95%.
+
 The config file will do this by installing deployment hooks that perform setup
 and cleanup related to Elastic Beanstalk's use of npm:
 
