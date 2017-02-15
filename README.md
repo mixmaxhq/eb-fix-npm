@@ -6,8 +6,10 @@ ways in AWS Elastic Beanstalk to make your deploys faster and more reliable.
 **TL;DR** This module makes it possible to upgrade from Node 4 to Node 6 on Elastic
 Beanstalk and speeds up npm install by 95%.
 
-The config file will do this by installing deployment hooks that perform setup
-and cleanup related to Elastic Beanstalk's use of npm:
+> Looking for even bigger savings? You might consider [disabling npm altogether](https://github.com/mixmaxhq/eb-disable-npm).
+
+This module works by installing deployment hooks that perform setup and cleanup
+related to Elastic Beanstalk's use of npm:
 
 * Downgrade npm to npm 2 because npm 3 is too slow to install packages for EB (deploys will time out)
 * Cache Node modules between deploys
