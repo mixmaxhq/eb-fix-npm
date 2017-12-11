@@ -21,8 +21,7 @@ the wrong directory and so just aborts)
 * Remove npm temp files [leftover](https://github.com/npm/npm/issues/6855) by installing from shrinkwrap
 
 The hooks expect that your Elastic Beanstalk application is using either platform
-version [3.1.0](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html#concepts.platforms.nodejs)
-(the latest) or the previous version, version [2.1.3](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platform-history-nodejs.html).
+version [3.1.0](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html#concepts.platforms.nodejs) or the previous version, version [2.1.3](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platform-history-nodejs.html). It may work with newer versions&mdash;if it does not, PRs are welcome!
 
 ## Installation
 
