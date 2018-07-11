@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/mixmaxhq/eb-fix-npm#readme",
   "dependencies": {
-    "install-files": "^1.0.0"
+    "install-files": "^1.1.5"
   }
 }
