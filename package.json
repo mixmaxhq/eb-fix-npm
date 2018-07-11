@@ -1,6 +1,6 @@
 {
   "name": "eb-fix-npm",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Fixes npm in Elastic Beanstalk environments.",
   "scripts": {
     "install": "install-files source",
